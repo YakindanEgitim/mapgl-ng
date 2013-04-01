@@ -11,3 +11,9 @@ Skills to be gained
 * WebGL
 * HTML5
 * JavaScript
+
+Examples on the Internet:
+-------------------------
+
+Heatmap Library and Example: http://www.patrick-wied.at/static/heatmapjs/
+WebGL Example: http://www.ro.me/ 
