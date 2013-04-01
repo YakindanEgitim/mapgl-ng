@@ -1,0 +1,47 @@
+<html>
+<head>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript">
+
+function pointMap()
+{
+x=event.clientX;
+y=event.clientY;
+if (x>800 | y>600){
+
+alert("outer zone");
+}
+else{
+$('#target').animate({
+    left: x-12,
+    top:y-12,
+  }, 1000, function() {
+  
+  });}
+}
+</script>
+
+<style type="text/css">
+#body
+{
+background-image:url('map.jpg');
+background-repeat:no-repeat;
+padding:0;
+margin:0;
+}
+#target {
+width:24px;
+height:24px;
+color:red;
+position:fixed;
+margin:2;
+padding:2;
+}
+</style>
+
+
+<body id="body"  onmousedown="pointMap()">
+</h2>
+<div id="target">*</div>
+</body>
+</html>
